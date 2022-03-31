@@ -1,0 +1,160 @@
+body{
+    width: 414px;
+    background-color: #E5E5E5;
+}
+
+/* div container, contem todos os blocos em colunas */
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+
+/* bloco da barra do cabeçalho */
+
+.topo{
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    box-sizing: border-box;
+    padding-left: 21px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.topo h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+
+    color: #FFFFFF;
+    
+}
+.topo p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+/* Bloco referente ao primeiro prato, bebida e sobremesa */
+
+.escolha{
+    box-sizing: border-box;
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+.escolha h2{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    box-sizing: border-box;
+    padding-left: 21px;
+
+    color: #333333;
+
+}
+.opcoes{
+    display: flex;
+    background-color: #E5E5E5;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    
+}
+.opcao{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-left: 16px;
+    padding-bottom: 15px;
+
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opcao p:nth-child(2){ 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color:#333333;
+}
+.opcao p:nth-child(3){
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #A6A6A6;
+}
+.opcao p:last-child{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+/* blcoo referente ao botão do pedido */
+
+.pedido{
+    width: 414px;
+    height: 92px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    margin-top: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
+}
