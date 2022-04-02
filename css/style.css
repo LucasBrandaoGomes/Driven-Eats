@@ -70,7 +70,23 @@ body{
     color: #333333;
 
 }
-.opcoes{
+.opcoes-principal{
+    display: flex;
+    background-color: #E5E5E5;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    
+}
+.opcoes-bebida{
+    display: flex;
+    background-color: #E5E5E5;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    
+}
+.opcoes-sobremesa{
     display: flex;
     background-color: #E5E5E5;
     overflow: hidden;
@@ -139,14 +155,16 @@ body{
     align-items: center;
 }
 button{
+    display: block;
+
     width: 364px;
     height: 61px;
     background-color: #CBCBCB;
     border-radius: 50px;
 
     box-sizing: border-box;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -158,3 +176,8 @@ button{
 
     color: #FFFFFF;
 }
+.selecionado{
+    box-sizing: border-box;
+    border: solid 5px rgb(4, 156, 4);
+}
+
