@@ -30,25 +30,38 @@
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\frango_yin_yang 1.png"/>
                 <p>Frango Yin Yang P</p>
                 <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>14.90</span>
+                </div>
+                <div class="check-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
             </div>
             <div class="opcao" onclick="escolherPrincipal(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\frango_yin_yang 1.png"/>
                 <p>Frango Yin Yang M</p>
                 <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 16,90</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>15.90</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherPrincipal(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\frango_yin_yang 1.png"/>
                 <p>Frango Yin Yang G</p>
                 <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 18,90</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>16.90</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherPrincipal(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\frango_yin_yang 1.png"/>
                 <p>Frango Yin Yang GG</p>
                 <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 20,90</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>18.90</span>
+                </div>
             </div>
         </div>
         <div class="escolha">
@@ -59,25 +72,37 @@
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\coquinha_gelada 1.png"/>
                 <p>Refrigerante</p>
                 <p>350 mL</p>
-                <p>R$ 4,90</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>4.90</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherBebida(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\coquinha_gelada 1.png"/>
                 <p>Água com gás</p>
                 <p>600 mL</p>
-                <p>R$ 4,50</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>4.50</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherBebida(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\coquinha_gelada 1.png"/>
                 <p>Suco de laranja</p>
                 <p>500 mL</p>
-                <p>R$ 6,00</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>6.00</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherBebida(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\coquinha_gelada 1.png"/>
                 <p>Água sem gás</p>
                 <p>600 mL</p>
-                <p>R$ 3,90</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>4.50</span>
+                </div>
             </div>
         </div>
         <div class="escolha">
@@ -88,34 +113,50 @@
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\pudim 1.png"/>
                 <p>Pudim</p>
                 <p>1 Fatia</p>
-                <p>R$ 6,00</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>6.50</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherSobremesa(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\pudim 1.png"/>
                 <p>Bolo de pote</p>
                 <p>Nutela</p>
-                <p>R$ 7,00</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>7.00</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherSobremesa(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\pudim 1.png"/>
                 <p>Bolo de pote</p>
                 <p>Coco queimado</p>
-                <p>R$ 8,00</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>8.00</span>
+                </div>
             </div>
             <div class="opcao" onclick="escolherSobremesa(this)">
                 <img src="C:\Users\Usuário\Desktop\Driven\projeto3-driveneats\pudim 1.png"/>
                 <p>Brownie</p>
                 <p>1 Unidade</p>
-                <p>R$ 7,50</p>
+                <div class="preço">
+                    <span>R$</span>
+                    <span>7.50</span>
+                </div>
             </div>
         </div>
         
         <div class="pedido">
             <div class="retangulo">
-                <button>
+                <button class="selecione">
                     Selecione os 3 itens
                     para fechar o pedido
                 </button>
+                <button class="finalizar escondido" onclick="finalizarPedido(this)">
+                    Finalizar pedido
+                </button>
+
             </div>
         </div>
     </div>

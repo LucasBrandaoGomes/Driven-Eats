@@ -1,3 +1,10 @@
+let principal;
+let valorprincipal;
+let bebida;
+let valorbebida;
+let sobremesa;
+let valorsobremesa;
+
 function escolherPrincipal(nomePrincipal) {
     console.log(nomePrincipal);
  
@@ -8,7 +15,12 @@ function escolherPrincipal(nomePrincipal) {
     }
 
     nomePrincipal.classList.add("selecionado");
-    opcao = nomePrincipal.innerHTML;
+
+    principal = nomePrincipal.querySelector(".opcao p:nth-child(2)").innerHTML;
+    valorprincipal = (nomePrincipal.querySelector(".preço span:nth-child(2)").innerHTML);
+
+    console.log(principal)
+    console.log(valorprincipal)
 }
 
 function escolherBebida(nomeBebida) {
@@ -21,7 +33,12 @@ function escolherBebida(nomeBebida) {
     }
   
     nomeBebida.classList.add("selecionado");
-    opcao = nomeBebida.innerHTML;
+
+    bebida = nomeBebida.querySelector(".opcao p:nth-child(2)").innerHTML;
+    valorbebida = (nomeBebida.querySelector(".preço span:nth-child(2)").innerHTML);
+
+    console.log(bebida)
+    console.log(valorbebida)
 }
 
 function escolherSobremesa(nomeSobremesa) {
@@ -32,8 +49,26 @@ function escolherSobremesa(nomeSobremesa) {
 
         botaoSelecionado.classList.remove("selecionado");
     }
-  
-    nomeSobremesa.classList.add("selecionado");
-    opcao = nomeSobremesa.innerHTML;
+
+    nomeSobremesa.classList.add("selecionado");  
+    
+    sobremesa = nomeSobremesa.querySelector(".opcao p:nth-child(2)").innerHTML;
+    valorsobremesa = (nomeSobremesa.querySelector(".preço span:nth-child(2)").innerHTML);
+
+    console.log(sobremesa)
+    console.log(valorsobremesa)
 }
-  
+
+let finalizar = document.querySelector(".button");
+
+if ((Number(valorprincipal) !== null) && (Number(valorbebida) !== null) && (Number(valorsobremesa) !== null)){
+    finalizar.querySelector(".selecione").classList.add("escondido");
+    finalizar.querySelector(".finalizar escondido").classList.remove("escondido");
+
+}
+
+
+function total(){
+   let total = Number(valorprincipal)+Number(valorbebida)+Number(valorsobremesa);
+
+}
