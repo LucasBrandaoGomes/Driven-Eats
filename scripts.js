@@ -5,13 +5,25 @@ let valorbebida;
 let sobremesa;
 let valorsobremesa;
 
+
+function verificaçao3pedidos(){
+
+    let finalizar = document.querySelector(".retangulo");
+
+    if ((Number(valorprincipal) > 0) && (Number(valorbebida) > 0) && (Number(valorsobremesa) > 0)){
+        
+        finalizar.querySelector(".selecione").classList.add("escondido");
+        finalizar.querySelector(".finalizar").classList.remove("escondido");
+
+    }
+}
+
 function escolherPrincipal(nomePrincipal) {
-    console.log(nomePrincipal);
+    console.log(nomePrincipal)
  
     const botaoSelecionado = document.querySelector(".opcoes-principal").querySelector(".selecionado");
     if (botaoSelecionado !== null) {
-
-        botaoSelecionado.classList.remove("selecionado");
+    botaoSelecionado.classList.remove("selecionado");
     }
 
     nomePrincipal.classList.add("selecionado");
@@ -19,8 +31,9 @@ function escolherPrincipal(nomePrincipal) {
     principal = nomePrincipal.querySelector(".opcao p:nth-child(2)").innerHTML;
     valorprincipal = (nomePrincipal.querySelector(".preço span:nth-child(2)").innerHTML);
 
-    console.log(principal)
-    console.log(valorprincipal)
+    
+
+    verificaçao3pedidos()    
 }
 
 function escolherBebida(nomeBebida) {
@@ -37,8 +50,8 @@ function escolherBebida(nomeBebida) {
     bebida = nomeBebida.querySelector(".opcao p:nth-child(2)").innerHTML;
     valorbebida = (nomeBebida.querySelector(".preço span:nth-child(2)").innerHTML);
 
-    console.log(bebida)
-    console.log(valorbebida)
+
+    verificaçao3pedidos()    
 }
 
 function escolherSobremesa(nomeSobremesa) {
@@ -55,20 +68,9 @@ function escolherSobremesa(nomeSobremesa) {
     sobremesa = nomeSobremesa.querySelector(".opcao p:nth-child(2)").innerHTML;
     valorsobremesa = (nomeSobremesa.querySelector(".preço span:nth-child(2)").innerHTML);
 
-    console.log(sobremesa)
-    console.log(valorsobremesa)
+    verificaçao3pedidos()
 }
 
-let finalizar = document.querySelector(".button");
-
-if ((Number(valorprincipal) !== null) && (Number(valorbebida) !== null) && (Number(valorsobremesa) !== null)){
-    finalizar.querySelector(".selecione").classList.add("escondido");
-    finalizar.querySelector(".finalizar escondido").classList.remove("escondido");
-
-}
-
-
-function total(){
-   let total = Number(valorprincipal)+Number(valorbebida)+Number(valorsobremesa);
-
+function finalizarPedido(){
+    
 }

@@ -183,6 +183,7 @@ ion-icon{
     height: 61px;
     background-color: #CBCBCB;
     border-radius: 50px;
+    border: none;
 
     box-sizing: border-box;
     padding-left: 80px;
@@ -205,6 +206,7 @@ ion-icon{
     height: 61px;
     background-color: rgb(4, 156, 4);
     border-radius: 50px;
+    border: none;
 
     box-sizing: border-box;
     padding-left: 80px;
