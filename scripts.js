@@ -72,9 +72,14 @@ function escolherSobremesa(nomeSobremesa) {
 }
 
 function finalizarPedido(){
+
+    let nome = prompt("Informe seu nome");
+    let endereço = prompt("Informe seu endereço Rua/Numero/Bairro");
+
     let total = (Number(valorprincipal)+Number(valorbebida)+Number(valorsobremesa)).toFixed(2)
-    console.log(total)
-    mensagem =  encodeURIComponent("Olá, gostaria de fazer o pedido:- Prato: " +principal+ "- Bebida: " +bebida+  "Sobremesa: " +sobremesa+ "Total: R$ " +total)
+
+    mensagem =  encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${principal}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\n Total: R$  ${total}\n\n  Nome: ${nome}\n Endereço: ${endereço}`)
 
     window.open("https://wa.me/5527997766049?text=" +mensagem)
 }
+
