@@ -20,18 +20,20 @@ function verificaçao3pedidos(){
 
 function escolherPrincipal(nomePrincipal) {
     console.log(nomePrincipal)
- 
+    
     const botaoSelecionado = document.querySelector(".opcoes-principal").querySelector(".selecionado");
     if (botaoSelecionado !== null) {
-    botaoSelecionado.classList.remove("selecionado");
-    }
 
+        botaoSelecionado.querySelector(".check-icon").classList.add("escondido");
+        botaoSelecionado.classList.remove("selecionado");
+
+    }
+    
     nomePrincipal.classList.add("selecionado");
+    nomePrincipal.querySelector(".check-icon").classList.remove("escondido");
 
     principal = nomePrincipal.querySelector(".opcao p:nth-child(2)").innerHTML;
     valorprincipal = (nomePrincipal.querySelector(".preço span:nth-child(2)").innerHTML);
-
-    
 
     verificaçao3pedidos()    
 }
@@ -41,11 +43,13 @@ function escolherBebida(nomeBebida) {
     
     const botaoSelecionado = document.querySelector(".opcoes-bebida").querySelector(".selecionado");
     if (botaoSelecionado !== null) {
-      
+
+      botaoSelecionado.querySelector(".check-icon").classList.add("escondido")
       botaoSelecionado.classList.remove("selecionado");
     }
   
     nomeBebida.classList.add("selecionado");
+    nomeBebida.querySelector(".check-icon").classList.remove("escondido")
 
     bebida = nomeBebida.querySelector(".opcao p:nth-child(2)").innerHTML;
     valorbebida = (nomeBebida.querySelector(".preço span:nth-child(2)").innerHTML);
@@ -60,10 +64,12 @@ function escolherSobremesa(nomeSobremesa) {
     const botaoSelecionado = document.querySelector(".opcoes-sobremesa").querySelector(".selecionado");
     if (botaoSelecionado !== null) {
 
+        botaoSelecionado.querySelector(".check-icon").classList.add("escondido")
         botaoSelecionado.classList.remove("selecionado");
     }
 
-    nomeSobremesa.classList.add("selecionado");  
+    nomeSobremesa.classList.add("selecionado");
+    nomeSobremesa.querySelector(".check-icon").classList.remove("escondido")  
     
     sobremesa = nomeSobremesa.querySelector(".opcao p:nth-child(2)").innerHTML;
     valorsobremesa = (nomeSobremesa.querySelector(".preço span:nth-child(2)").innerHTML);
