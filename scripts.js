@@ -72,5 +72,9 @@ function escolherSobremesa(nomeSobremesa) {
 }
 
 function finalizarPedido(){
-    
+    let total = (Number(valorprincipal)+Number(valorbebida)+Number(valorsobremesa)).toFixed(2)
+    console.log(total)
+    mensagem =  encodeURIComponent("Olá, gostaria de fazer o pedido:- Prato: " +principal+ "- Bebida: " +bebida+  "Sobremesa: " +sobremesa+ "Total: R$ " +total)
+
+    window.open("https://wa.me/5527997766049?text=" +mensagem)
 }
